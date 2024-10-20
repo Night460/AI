@@ -1,0 +1,66 @@
+Example 1: 
+friend(jin, james). 
+friend(jin, john). 
+likes(john, jin). 
+likes(james, john). 
+happy(X):-friend(X,Y),likes(Y,X). 
+
+ Example 2: 
+owns(jack , car(bmw)). 
+owns(john , car(chevy)). 
+owns(olivia , car(civic)). 
+owns(jane , car(chevy)). 
+sedan(car(bmw)). 
+sedan(car(civic)). 
+truck(car(chevy)). 
+
+Example 3: 
+cat(fubby). 
+black_spots(fubby). 
+dog(figaro). 
+white_spots(figaro). 
+owns (mary, Pet):- cat(Pet), black_spots(Pet). 
+loves (Who,What):- owns(Who ,What). 
+
+Example 4: 
+woman(jia). 
+man(john). 
+healthy(john). 
+healthy(jia). 
+wealthy(john). 
+traveler(X) :- healthy(X), wealthy(X). 
+travel(X) :- traveler(X). 
+
+Example 5: 
+/* Facts */ 
+male(jack). 
+male(oliver). 
+male(ali). 
+male(james). 
+male(simon). 
+male(harry). 
+female(helen). 
+female(sophie). 
+female(jess).
+female(lily). 
+parent_of(jack,jess). 
+parent_of(jack,lily). 
+parent_of(helen, jess). 
+parent_of(helen, lily). 
+parent_of(oliver,james). 
+parent_of(sophie, james). 
+parent_of(jess, simon). 
+parent_of(ali, simon). 
+parent_of(lily, harry). 
+parent_of(james, harry). 
+/* Rules */ 
+father_of(X,Y):- male(X), parent_of(X,Y). 
+mother_of(X,Y):- female(X), parent_of(X,Y). 
+grandfather_of(X,Y):- male(X), parent_of(X,Z), parent_of(Z,Y). 
+grandmother_of(X,Y):- female(X), parent_of(X,Z), parent_of(Z,Y). 
+sister_of(X,Y):- %(X,Y or Y,X)%female(X) 
+brother_of(X,Y):- %(X,Y or Y,X)% male(X) 
+aunt_of(X,Y):- female(X), 
+uncle_of(X,Y):-parent_of(Z,Y), brother_of(Z,X). 
+ancestor_of(X,Y):- parent_of(X,Y). 
+ancestor_of(X,Y):- parent_of(X,Z), ancestor_of(Z,Y).
