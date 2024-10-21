@@ -1,0 +1,23 @@
+AI experiment explanation with chatgpt links.
+
+
+3. Prolog
+https://chatgpt.com/share/67153164-9ee8-8010-b984-015314214124
+
+4. BFS
+https://chatgpt.com/share/67152d3f-c8e8-800b-8da6-9fd4e9683722
+
+4. DFS
+https://chatgpt.com/share/67152de2-c5e8-800b-9462-33f7b1e6dd20
+
+5. Tic-Tac-Toe Game for Human-Computer Interaction
+https://chatgpt.com/share/67152e98-a57c-800b-96fc-b6f125679672
+
+6. MinMax
+https://chatgpt.com/share/67152f08-8430-800b-974a-5e7770a4c4b7
+
+7. Hill climbing 
+https://chatgpt.com/share/67152fd3-0f34-8010-8301-bb11d490929b
+
+8. Bayes rule
+https://chatgpt.com/share/67152fde-1784-8010-870a-b500fc45b663
